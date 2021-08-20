@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Completion_After_Start</fullName>
+    <active>true</active>
+    <errorConditionFormula>Start_Date_and_Time__c &gt;  Date_and_Time_of_Completion__c</errorConditionFormula>
+    <errorMessage>The start time and date of the task should be earlier than the date and time of completion</errorMessage>
+</ValidationRule>

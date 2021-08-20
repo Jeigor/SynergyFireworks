@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Meat_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Meat Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Beef</fullName>
+                <default>false</default>
+                <label>Beef</label>
+            </value>
+            <value>
+                <fullName>Steak</fullName>
+                <default>false</default>
+                <label>Steak</label>
+            </value>
+            <value>
+                <fullName>Turkey</fullName>
+                <default>false</default>
+                <label>Turkey</label>
+            </value>
+            <value>
+                <fullName>Ham</fullName>
+                <default>false</default>
+                <label>Ham</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

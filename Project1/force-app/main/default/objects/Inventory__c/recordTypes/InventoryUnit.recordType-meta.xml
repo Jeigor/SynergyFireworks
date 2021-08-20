@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InventoryUnit</fullName>
+    <active>true</active>
+    <label>InventoryUnit</label>
+    <picklistValues>
+        <picklist>Inventory_Unit__c</picklist>
+        <values>
+            <fullName>Baguette Bread</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beef</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bleach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brioche Bread</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coke Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cups</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eating Utensils</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ham</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oxyclean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Inventory Unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rye Bread</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sourdough Bread</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Steak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turkey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Windex</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

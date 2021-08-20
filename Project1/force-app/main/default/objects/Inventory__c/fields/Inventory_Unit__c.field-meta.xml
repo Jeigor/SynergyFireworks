@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inventory_Unit__c</fullName>
+    <externalId>false</externalId>
+    <label>Inventory Unit</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Baguette Bread</fullName>
+                <default>false</default>
+                <label>Baguette Bread</label>
+            </value>
+            <value>
+                <fullName>Brioche Bread</fullName>
+                <default>false</default>
+                <label>Brioche Bread</label>
+            </value>
+            <value>
+                <fullName>Rye Bread</fullName>
+                <default>false</default>
+                <label>Rye Bread</label>
+            </value>
+            <value>
+                <fullName>Sourdough Bread</fullName>
+                <default>false</default>
+                <label>Sourdough Bread</label>
+            </value>
+            <value>
+                <fullName>Beef</fullName>
+                <default>false</default>
+                <label>Beef</label>
+            </value>
+            <value>
+                <fullName>Steak</fullName>
+                <default>false</default>
+                <label>Steak</label>
+            </value>
+            <value>
+                <fullName>Turkey</fullName>
+                <default>false</default>
+                <label>Turkey</label>
+            </value>
+            <value>
+                <fullName>Ham</fullName>
+                <default>false</default>
+                <label>Ham</label>
+            </value>
+            <value>
+                <fullName>Water</fullName>
+                <default>false</default>
+                <label>Water</label>
+            </value>
+            <value>
+                <fullName>Coke Product</fullName>
+                <default>false</default>
+                <label>Coke Product</label>
+            </value>
+            <value>
+                <fullName>Cups</fullName>
+                <default>false</default>
+                <label>Cups</label>
+            </value>
+            <value>
+                <fullName>Plates</fullName>
+                <default>false</default>
+                <label>Plates</label>
+            </value>
+            <value>
+                <fullName>Eating Utensils</fullName>
+                <default>false</default>
+                <label>Eating Utensils</label>
+            </value>
+            <value>
+                <fullName>Bleach</fullName>
+                <default>false</default>
+                <label>Bleach</label>
+            </value>
+            <value>
+                <fullName>Windex</fullName>
+                <default>false</default>
+                <label>Windex</label>
+            </value>
+            <value>
+                <fullName>Oxyclean</fullName>
+                <default>false</default>
+                <label>Oxyclean</label>
+            </value>
+            <value>
+                <fullName>Pending Inventory Unit</fullName>
+                <default>false</default>
+                <label>Pending Inventory Unit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
