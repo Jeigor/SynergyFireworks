@@ -1,0 +1,12 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    }
+  ],
+  "name": "Project1",
+  "namespace": "",
+  "sfdcLoginUrl": "https://resilient-panda-iayf23-dev-ed.my.salesforce.com/",
+  "sourceApiVersion": "52.0"
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Drink_Selected</fullName>
+    <active>true</active>
+    <description>The a drink has been included in the transaction but not selected</description>
+    <errorConditionFormula>Drink_Included__c  = True &amp;&amp; ISPICKVAL(Drink__c,&quot;&quot;)</errorConditionFormula>
+    <errorDisplayField>Drink__c</errorDisplayField>
+    <errorMessage>A drink has been requested to be included in the transaction but a drink choice has not been included, please choose a drink value</errorMessage>
+</ValidationRule>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TaskType__c</fullName>
+    <externalId>false</externalId>
+    <label>TaskType</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Clean Bathroom</fullName>
+                <default>false</default>
+                <label>Clean Bathroom</label>
+            </value>
+            <value>
+                <fullName>Operate Register</fullName>
+                <default>false</default>
+                <label>Operate Register</label>
+            </value>
+            <value>
+                <fullName>Make Sandwiches</fullName>
+                <default>false</default>
+                <label>Make Sandwiches</label>
+            </value>
+            <value>
+                <fullName>Clean Tables</fullName>
+                <default>false</default>
+                <label>Clean Tables</label>
+            </value>
+            <value>
+                <fullName>Sweep</fullName>
+                <default>false</default>
+                <label>Sweep</label>
+            </value>
+            <value>
+                <fullName>Mop</fullName>
+                <default>false</default>
+                <label>Mop</label>
+            </value>
+            <value>
+                <fullName>Restock Inventory</fullName>
+                <default>false</default>
+                <label>Restock Inventory</label>
+            </value>
+            <value>
+                <fullName>Wipe Windows</fullName>
+                <default>false</default>
+                <label>Wipe Windows</label>
+            </value>
+            <value>
+                <fullName>Empty Trash</fullName>
+                <default>false</default>
+                <label>Empty Trash</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
