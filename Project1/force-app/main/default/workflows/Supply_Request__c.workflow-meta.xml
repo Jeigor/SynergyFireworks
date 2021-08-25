@@ -5,11 +5,7 @@
         <description>Supply request has not been completed after week</description>
         <protected>false</protected>
         <recipients>
-            <recipient>edwin.admin@email.email</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>emanuelbotello2@resilient-panda-iayf23.com</recipient>
+            <recipient>nolantoole34@curious-moose-39009a.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
