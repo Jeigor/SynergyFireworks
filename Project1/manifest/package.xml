@@ -153,7 +153,9 @@
 		<name>EmailServicesFunction</name>
 	</types>
 	<types>
-		<members>*</members>
+		<members>unfiled$public/New_Applicant</members>
+		<members>unfiled$public/New_Inventory_Item_Added</members>
+		<members>unfiled$public/Supply_Request_Unfulfilled</members>
 		<name>EmailTemplate</name>
 	</types>
 	<types>
@@ -283,10 +285,6 @@
 	<types>
 		<members>*</members>
 		<name>Scontrol</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>Settings</name>
 	</types>
 	<types>
 		<members>*</members>
