@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <types>
+    <!--<types>
 		<members>*</members>
 		<name>ActionLinkGroupTemplate</name>
 	</types>
@@ -317,6 +317,14 @@
 	<types>
 		<members>*</members>
 		<name>Workflow</name>
+	</types>
+    -->
+    <types>
+		<members>unfiled$public/New_Applicant</members>
+        <members>unfiled$public/New_Inventory_Item_Added</members>
+        <members>unfiled$public/New_Supply_Request_Verification</members>
+        <members>unfiled$public/Supply_Request_Unfulfilled</members>
+		<name>EmailTemplate</name>
 	</types>
     <version>52.0</version>
 </Package>
