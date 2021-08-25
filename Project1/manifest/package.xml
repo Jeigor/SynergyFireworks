@@ -254,10 +254,6 @@
 	</types>
 	<types>
 		<members>*</members>
-		<name>ProfileSessionSetting</name>
-	</types>
-	<types>
-		<members>*</members>
 		<name>Queue</name>
 	</types>
 	<types>
