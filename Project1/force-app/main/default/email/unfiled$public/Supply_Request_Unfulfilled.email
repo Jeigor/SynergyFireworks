@@ -1,0 +1,3 @@
+The current supply request for 
+{!Supply_Request__c.SupplyRequest__c}: {!Supply_Request__c.Supply_amount__c}
+has not been completed and it ahs been one week since the request was submitted
