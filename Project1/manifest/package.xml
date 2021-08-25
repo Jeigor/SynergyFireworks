@@ -202,10 +202,6 @@
 	</types>
 	<types>
 		<members>*</members>
-		<name>InstalledPackage</name>
-	</types>
-	<types>
-		<members>*</members>
 		<name>Layout</name>
 	</types>
 	<types>
@@ -290,10 +286,6 @@
 	</types>
 	<types>
 		<members>*</members>
-		<name>SamlSsoConfig</name>
-	</types>
-	<types>
-		<members>*</members>
 		<name>Scontrol</name>
 	</types>
 	<types>
@@ -332,5 +324,6 @@
 		<members>*</members>
 		<name>Workflow</name>
 	</types>
+
     <version>52.0</version>
 </Package>
