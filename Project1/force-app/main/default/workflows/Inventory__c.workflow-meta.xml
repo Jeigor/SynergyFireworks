@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>NewInventory</fullName>
+        <description>There has been a new inventory item added</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>edwin.admin@email.email</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>emanuelbotello2@resilient-panda-iayf23.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/New_Inventory_Item_Added</template>
+    </alerts>
+    <rules>
+        <fullName>New Inventory</fullName>
+        <actions>
+            <name>NewInventory</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>User.ProfileId</field>
+            <operation>notEqual</operation>
+            <value>Shop Owner</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>
