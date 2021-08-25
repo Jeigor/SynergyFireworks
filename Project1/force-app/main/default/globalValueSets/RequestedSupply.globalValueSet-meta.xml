@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Bread</fullName>
+        <default>false</default>
+        <label>Bread</label>
+    </customValue>
+    <customValue>
+        <fullName>Meat</fullName>
+        <default>false</default>
+        <label>Meat</label>
+    </customValue>
+    <customValue>
+        <fullName>Drinks</fullName>
+        <default>false</default>
+        <label>Drinks</label>
+    </customValue>
+    <customValue>
+        <fullName>Utensils</fullName>
+        <default>false</default>
+        <label>Utensils</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning Supplies</fullName>
+        <default>false</default>
+        <label>Cleaning Supplies</label>
+    </customValue>
+    <masterLabel>RequestedSupply</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
