@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+<SamlSsoConfig xmlns="lisa.ds.jones@playful-goat-tojlx4.com">
     <errorUrl>https://login.salesforce.com/?login=1</errorUrl>
     <identityLocation>SubjectNameId</identityLocation>
     <identityMapping>UserId</identityMapping>
