@@ -395,11 +395,6 @@
         <apexPage>ManageTasks</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
-    <recordTypeVisibilities>
-        <default>true</default>
-        <recordType>Inventory__c.InventoryUnit</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities>
     <tabVisibilities>
         <tab>Applicant__c</tab>
         <visibility>DefaultOff</visibility>
