@@ -8,7 +8,7 @@
     <applicationVisibilities>
         <application>standard__AllTabSet</application>
         <default>true</default>
-        <visible>false</visible>
+        <visible>true</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__AppLauncher</application>
@@ -214,10 +214,6 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>SupplyRequestProcess</flow>
-    </flowAccesses>
-    <flowAccesses>
-        <enabled>false</enabled>
-        <flow>Supply_Request_Unprocessed</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>

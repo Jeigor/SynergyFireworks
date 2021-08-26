@@ -217,10 +217,6 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
-        <flow>Supply_Request_Unprocessed</flow>
-    </flowAccesses>
-    <flowAccesses>
-        <enabled>false</enabled>
         <flow>TaskUpdateInventory</flow>
     </flowAccesses>
     <flowAccesses>

@@ -153,7 +153,9 @@
 		<name>EmailServicesFunction</name>
 	</types>
 	<types>
-		<members>*</members>
+		<members>unfiled$public/New_Applicant</members>
+		<members>unfiled$public/New_Inventory_Item_Added</members>
+		<members>unfiled$public/Supply_Request_Unfulfilled</members>
 		<name>EmailTemplate</name>
 	</types>
 	<types>
@@ -199,10 +201,6 @@
 	<types>
 		<members>*</members>
 		<name>HomePageLayout</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>InstalledPackage</name>
 	</types>
 	<types>
 		<members>*</members>
@@ -258,10 +256,6 @@
 	</types>
 	<types>
 		<members>*</members>
-		<name>ProfileSessionSetting</name>
-	</types>
-	<types>
-		<members>*</members>
 		<name>Queue</name>
 	</types>
 	<types>
@@ -290,15 +284,7 @@
 	</types>
 	<types>
 		<members>*</members>
-		<name>SamlSsoConfig</name>
-	</types>
-	<types>
-		<members>*</members>
 		<name>Scontrol</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>Settings</name>
 	</types>
 	<types>
 		<members>*</members>
@@ -331,6 +317,13 @@
 	<types>
 		<members>*</members>
 		<name>Workflow</name>
+	</types>
+    <types>
+		<members>unfiled$public/New_Applicant</members>
+        <members>unfiled$public/New_Inventory_Item_Added</members>
+        <members>unfiled$public/New_Supply_Request_Verification</members>
+        <members>unfiled$public/Supply_Request_Unfulfilled</members>
+		<name>EmailTemplate</name>
 	</types>
     <version>52.0</version>
 </Package>
