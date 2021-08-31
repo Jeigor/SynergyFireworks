@@ -9,8 +9,4 @@
         <value>Transactions</value>
     </caseValues>
     <startsWith>Consonant</startsWith>
-    <validationRules>
-        <errorMessage></errorMessage>
-        <name>Drink_Selected</name>
-    </validationRules>
 </CustomObjectTranslation>

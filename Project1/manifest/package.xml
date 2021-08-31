@@ -13,7 +13,11 @@
 		<name>ApexComponent</name>
 	</types>
 	<types>
-		<members>*</members>
+		<members>ThankYouForOrdering</members>
+		<name>ApexPage</name>
+	</types>
+	<types>
+		<members>NewTransaction</members>
 		<name>ApexPage</name>
 	</types>
 	<types>

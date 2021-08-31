@@ -1,7 +1,7 @@
 trigger TransactionTrigger on Transaction__c (before insert, before update, before delete, after insert, after update, after delete, after undelete) {
     switch on trigger.operationType {
         when BEFORE_INSERT { 
-            TransactionHandler.ValidateTransaction(trigger.new);
+            //TransactionHandler.ValidateTransaction(trigger.new);
         }
         when BEFORE_UPDATE {
             
@@ -10,7 +10,7 @@ trigger TransactionTrigger on Transaction__c (before insert, before update, befo
             
         }
         when AFTER_INSERT {
-            TransactionHandler.afterInsertInventory(trigger.new);
+            //TransactionHandler.afterInsertInventory(trigger.new);
         }
         when AFTER_UPDATE {
             

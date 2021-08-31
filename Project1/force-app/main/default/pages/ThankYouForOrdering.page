@@ -1,0 +1,24 @@
+<apex:page controller="TransactionController">
+    
+    <apex:sectionHeader title="Thank You For Ordering"/>
+    
+    <apex:pageBlock >
+    	
+        <apex:pageBlockSection title="Your Order Invoice">
+            
+            <apex:pageBlockTable value="{!Tranlist}" var="tt">
+                    
+                    <apex:column value="{!tt.Bread_Type__c}"/>
+                    <apex:column value="{!tt.Meat_Type__c}"/>
+                    <apex:column value="{!tt.Drink__c}"/>
+                    <apex:column value="{!tt.Drink_Included__c}"/>
+                    <apex:column value="{!tt.Utensils_Included__c}"/>
+ 
+                </apex:pageBlockTable>
+        
+        </apex:pageBlockSection>
+    
+    </apex:pageBlock>
+    
+    
+</apex:page>

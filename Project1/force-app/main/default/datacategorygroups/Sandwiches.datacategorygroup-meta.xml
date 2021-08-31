@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <label>Steak</label>
+            <name>steak</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Turkey</label>
+            <name>turkey</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Ham</label>
+            <name>ham</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Others</label>
+            <name>others</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>Sandwiches</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

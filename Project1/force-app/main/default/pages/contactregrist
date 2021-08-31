@@ -1,0 +1,28 @@
+<apex:page standardController="Contact">
+    
+    <apex:sectionHeader title="Welcome to our Shop"/>
+    
+    <apex:form>
+    	<apex:pageBlock>
+        
+        	<apex:pageBlockSection collapsible="True" title="Your Information, Please" showHeader="True">
+            
+                <apex:inputField value = "{!Contact.FirstName}" required="true" />
+                <apex:inputField value = "{!Contact.LastName}" required="true"/>
+                <apex:inputField value = "{!Contact.Email}" required="true"/>
+                <apex:inputField value = "{!Contact.MobilePhone}" required="true" label="Phone"/>
+
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection>
+            
+            	<apex:commandButton value="Save" action="{!save}" />
+            
+            </apex:pageBlockSection>
+            
+        </apex:pageBlock>
+        
+    </apex:form>
+     
+    
+</apex:page>

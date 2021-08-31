@@ -17,6 +17,7 @@
     <tabs>Supply_Request__c</tabs>
     <tabs>Inventory__c</tabs>
     <tabs>Transaction__c</tabs>
+    <tabs>Knowledge__kav</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningService_UtilityBar</utilityBar>
     <workspaceConfig>
@@ -25,6 +26,9 @@
         </mappings>
         <mappings>
             <tab>Inventory__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Knowledge__kav</tab>
         </mappings>
         <mappings>
             <tab>Supply_Request__c</tab>
