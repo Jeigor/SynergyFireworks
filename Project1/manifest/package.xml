@@ -6,6 +6,7 @@
 	</types>
 	<types>
 		<members>ApplicationControllerExtension</members>
+		<members>ApplicationControllerTest</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
