@@ -1,34 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <!--<types>
-		<members>*</members>
-		<name>ActionLinkGroupTemplate</name>
-	</types>
+    
 	<types>
-		<members>*</members>
+		<members>SupplyRequestHandler</members>
+		<members>SupplyRequestTest</members>
+		<members>TransactionHandler</members>
+		<members>TransactionTriggerTest</members>
+		<members>TaskExtensionController</members>
 		<name>ApexClass</name>
 	</types>
+	<!--
 	<types>
 		<members>*</members>
 		<name>ApexComponent</name>
-	</types>
+	</types>-->
 	<types>
-		<members>*</members>
+		<members>ManageTasks</members>
 		<name>ApexPage</name>
 	</types>
 	<types>
-		<members>*</members>
+		<members>SupplyRequestTrigger</members>
+		<members>TransactionTrigger</members>
 		<name>ApexTrigger</name>
 	</types>
 	<types>
-		<members>*</members>
+		<members>AppSwitcher</members>
 		<name>AppMenu</name>
 	</types>
 	<types>
-		<members>*</members>
+		<members>Inventory__c.Approval_for_New_Inventory</members>
+		<members>SupplyRequest__c.Supply_Request_Aproval1</members>
+		<members>SupplyRequest__c.Supply_Request_Aprroval</members>
 		<name>ApprovalProcess</name>
 	</types>
-	<types>
+	<!--<types>
 		<members>*</members>
 		<name>AssignmentRules</name>
 	</types>
@@ -75,11 +80,12 @@
 	<types>
 		<members>*</members>
 		<name>CorsWhitelistOrigin</name>
-	</types>
+	</types>-->
 	<types>
-		<members>*</members>
+		<members>Ikes_StorePage</members>
 		<name>CustomApplication</name>
 	</types>
+	<!--
 	<types>
 		<members>*</members>
 		<name>CustomApplicationComponent</name>
@@ -99,12 +105,18 @@
 	<types>
 		<members>*</members>
 		<name>CustomMetadata</name>
-	</types>
+	</types>-->
 	<types>
-		<members>*</members>
+		<members>Applicant__c</members>
+		<members>Interview__c</members>
+		<members>Inventory__c</members>
+		<members>Supply_Request__c</members>
+		<members>Task__c</members>
+		<members>Transaction__c</members>
+		<members>User__c</members>
 		<name>CustomObject</name>
 	</types>
-	<types>
+	<!--<types>
 		<members>*</members>
 		<name>CustomObjectTranslation</name>
 	</types>
@@ -151,14 +163,15 @@
 	<types>
 		<members>*</members>
 		<name>EmailServicesFunction</name>
-	</types>
+	</types>-->
 	<types>
 		<members>unfiled$public/New_Applicant</members>
-		<members>unfiled$public/New_Inventory_Item_Added</members>
-		<members>unfiled$public/Supply_Request_Unfulfilled</members>
+        <members>unfiled$public/New_Inventory_Item_Added</members>
+        <members>unfiled$public/New_Supply_Request_Verification</members>
+        <members>unfiled$public/Supply_Request_Unfulfilled</members>
 		<name>EmailTemplate</name>
 	</types>
-	<types>
+	<!--<types>
 		<members>*</members>
 		<name>EscalationRules</name>
 	</types>
@@ -169,16 +182,21 @@
 	<types>
 		<members>*</members>
 		<name>ExternalServiceRegistration</name>
-	</types>
+	</types>-->
 	<types>
-		<members>*</members>
+		<members>Ike_s_Home</members>
+		<members>Ike_s_StorePage_UtilityBar</members>
 		<name>FlexiPage</name>
 	</types>
 	<types>
-		<members>*</members>
+		<members>Low_Inventory_Supply_Request</members>
+		<members>SupplyRequestProcess</members>
+		<members>Task_Incomplete</members>
+		<members>TaskUpdateInventory</members>
+		<members>Standard_Task_Updates_Inventory</members>
 		<name>Flow</name>
 	</types>
-	<types>
+	<!--<types>
 		<members>*</members>
 		<name>FlowCategory</name>
 	</types>
@@ -201,12 +219,15 @@
 	<types>
 		<members>*</members>
 		<name>HomePageLayout</name>
-	</types>
+	</types>-->
 	<types>
-		<members>*</members>
+		<members>Interview__c-Interview Layout</members>
+		<members>Inventory__c-Inventory Layout</members>
+		<members>Task__c-Task Layout</members>
+		<members>Task-Custom Task Layout</members>
 		<name>Layout</name>
 	</types>
-	<types>
+	<!--<types>
 		<members>*</members>
 		<name>Letterhead</name>
 	</types>
@@ -297,12 +318,15 @@
 	<types>
 		<members>*</members>
 		<name>StandardValueSetTranslation</name>
-	</types>
+	</types>-->
 	<types>
-		<members>*</members>
+		<members>Logo</members>
+		<members>sandwiches</members>
+		<members>SiteSamples</members>
+		<members>stackedsandwich</members>
 		<name>StaticResource</name>
 	</types>
-	<types>
+	<!--<types>
 		<members>*</members>
 		<name>SynonymDictionary</name>
 	</types>
@@ -319,12 +343,6 @@
 		<name>Workflow</name>
 	</types>
     -->
-    <types>
-		<members>unfiled$public/New_Applicant</members>
-        <members>unfiled$public/New_Inventory_Item_Added</members>
-        <members>unfiled$public/New_Supply_Request_Verification</members>
-        <members>unfiled$public/Supply_Request_Unfulfilled</members>
-		<name>EmailTemplate</name>
-	</types>
+    
     <version>52.0</version>
 </Package>

@@ -1,2 +1,41 @@
-<apex:page standardController="Task">
+<apex:page controller="TaskExtensionController" >
+    <apex:form >
+    <apex:pageBlock title="Current Tasks">
+        <apex:PageBlockTable value="{!tasList}" var="indTask">
+            <apex:column headerValue="Assigned To">
+                <apex:inputField value="{!indTask.OwnerId}" />
+            </apex:column>
+            <apex:column headerValue="Subject">
+                <apex:inputField value="{!indTask.Subject}" />
+            </apex:column>
+            <apex:column headerValue="Due Date">
+                <apex:inputField value="{!indTask.ActivityDate}" />
+            </apex:column>
+            <apex:column headerValue="Priority">
+                <apex:inputField value="{!indTask.Priority}" />
+            </apex:column>
+            <apex:column headerValue="Status">
+                <apex:inputField value="{!indTask.Status}" />
+            </apex:column>
+        </apex:PageBlockTable>
+        <apex:pageBlockButtons >
+                <apex:commandButton style="float:centre" action="{!updateExistingTask}" value="Update"/>  
+            </apex:pageBlockButtons>
+    </apex:pageBlock>
+    </apex:form>
+    <apex:form >
+        <apex:pageBlock title="Add a New Task">
+            <apex:pageBlockSection >
+                <apex:inputField value="{!taskToInsert.OwnerId}" />
+                <apex:inputField value="{!taskToInsert.Subject}" />
+                <apex:inputField value="{!taskToInsert.ActivityDate}" />
+                <apex:inputField value="{!taskToInsert.Priority}" />
+                <apex:inputField value="{!taskToInsert.Status}" />
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton style="float:centre" action="{!addNewTask}" value="Save"/>  
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+    <apex:pageMessages />
 </apex:page>
