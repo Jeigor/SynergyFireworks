@@ -1,0 +1,32 @@
+<apex:page controller="PopularInventoryControler">
+    <apex:form >
+		<apex:pageBlock title="Stock by Popularity">		            
+           
+<!--            <apex:pageBlockSection >
+                <apex:selectList label="FilterType" size="1" value="{!tableFilter}" onselect="{!updateTableView}">
+                    <apex:selectOption itemvalue="All"/>
+                    <apex:selectOption itemvalue="Breads"/>
+                    <apex:selectOption itemvalue="Meats"/>
+                    <apex:selectOption itemvalue="Cheeses"/>
+                </apex:selectList> 
+            </apex:pageBlockSection>-->
+       
+            <apex:pageBlockTable value="{! invPickList}" var="invItem"> 
+                <apex:column value="{!invItem.Name}" headerValue="Name" />
+                <apex:column value="{!invItem.InvAmt}" headerValue="In Stock"/>
+                <apex:column value="{!invItem.SoldAmt}" headerValue="Sold"/>
+                <apex:column value="{!invItem.RecAmt}" headerValue="Reccomended Amount to Order"/>
+            </apex:pageBlockTable>
+
+        </apex:pageBlock>
+        <apex:commandButton action="{!CreateOrder}" value="Order Recommended Products"/>
+    </apex:form>
+    <!--apex:pageMessage/-->
+</apex:page>
+
+<!-- make new order based on popular transactions
+	bind filter val to another variable and run queiry
+
+	run order quiery 
+
+-->
