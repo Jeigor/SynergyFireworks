@@ -5,7 +5,7 @@
     	
         
     </style>
-    <apex:form style="border: solid 10px #256940;">
+    <apex:form >
         <apex:pageBlock >
             <!--Section to input the applicants contact info-->
     		<apex:pageBlockSection title="Contact Info">
