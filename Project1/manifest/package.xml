@@ -112,6 +112,7 @@
 		<members>Inventory__c</members>
 		<members>Supply_Request__c</members>
 		<members>Task__c</members>
+		<members>Task</members>
 		<members>Transaction__c</members>
 		<members>User__c</members>
 		<name>CustomObject</name>
