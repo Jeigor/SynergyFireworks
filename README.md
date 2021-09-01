@@ -1,56 +1,65 @@
 # SynergyFireworks
-Each class has its own functionality for the org:
-  	ApplicationControllerExtension
-	ApplicationControllerTest
+## Each class has its own functionality for the org:
+
 The Controller and testing for the controller for application page
+- ApplicationControllerExtension
+- ApplicationControllerTest
+
   
-	SupplyRequestHandler 
-	SupplyRequestTest
 Method and testing for the trigger on supply request custom object
+- SupplyRequestHandler 
+- SupplyRequestTest
+
   
-	TransactionHandler
-	TransactionTriggerTest
 Method and testing for the trigger on Transaction custom object
+- TransactionHandler
+- TransactionTriggerTest
+
   
-	TransactionController
-	TransactionpageControllerTest
-Controller and testing for the transaction visualforce page
+Controller and testing for the **Transaction** visualforce page
+- TransactionController
+- TransactionpageControllerTest
+
   
-	TaskExtensionControllerTest
-	TaskExtensionController
-Controller and testing for the transaction visualforce page
-
-	PopularInventoryControler
-	PopularityObject
-Controller and extra class for the popular inventory page
+Controller and testing for the **Task** visualforce page
+- TaskExtensionControllerTest
+- TaskExtensionController
 
 
-Name of Visualforce pages to import:
-	ManageTasks
-	ApplicationPage
-	NewTransaction
-	ThankYouForOrdering
-	PopularItems
+Controller and extra class for the **Popular Inventory** page
+- PopularInventoryControler
+- PopularityObject
 
 
-Name of Apex Triggers to import:
-	SupplyRequestTrigger
-	TransactionTrigger
+
+## What to Import:
+
+### Visualforce Pages
+- ManageTasks
+- ApplicationPage
+- NewTransaction
+- ThankYouForOrdering
+- PopularItems
+
+
+### Triggers
+- SupplyRequestTrigger
+- TransactionTrigger
 	
-Name of Classes to import:
-	PopularityObject.cls
-	ApplicationControllerExtension
-	ApplicationControllerTest
-	PopularInventoryControler
-	SupplyRequestHandler
-	SupplyRequestTest
-	TaskExtensionController
-	TaskExtensionControllerTest
-	TransactionContoller
-	TransactionController
-	TransactionHandler
-	TransactionTriggerTest
-	TransactionpageControllerTest
+### Classes
+- PopularityObject.cls
+- ApplicationControllerExtension
+- ApplicationControllerTest
+- PopularInventoryControler
+- SupplyRequestHandler
+- SupplyRequestTest
+- TaskExtensionController
+- TaskExtensionControllerTest
+- TransactionContoller
+- TransactionController
+- TransactionHandler
+- TransactionTriggerTest
+- TransactionpageControllerTest
 
 
 
