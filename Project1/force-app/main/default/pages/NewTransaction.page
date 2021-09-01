@@ -1,0 +1,60 @@
+<apex:page controller="TransactionController" >
+    
+    <apex:sectionHeader title="Ready to Order?" />
+    <apex:image url="{!$Resource.Logo}" style=" float: right; width: 60px; margin: -65px 20px 0 0" />
+    
+    <apex:form >
+        
+        <apex:pageBlock >
+
+        	<apex:pageBlockSection collapsible="true" title="We assume you want cheese unless stated otherwise... Lactose Intolerance? Ask for Vegan Cheese" showHeader="true" >
+        
+            	<apex:inputField value="{!tran.Bread_Type__c}"/>
+                <apex:inputField value="{!tran.Meat_Type__c}"/>
+                <apex:inputField value="{!tran.Drink__c}"/>
+                <apex:inputField value="{!tran.Drink_Included__c}"/>
+                <apex:inputField value="{!tran.Utensils_Included__c}"/>
+
+       		 </apex:pageBlockSection>
+            
+            <apex:pageBlockSection >
+            
+                <apex:commandButton value="Add to Cart" action="{!addCart}" />
+            
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection title="Cart">
+            	
+                <apex:pageBlockTable value="{!Tranlist}" var="tt" >
+                    
+                    <apex:column value="{!tt.Bread_Type__c}"/>
+                    <apex:column value="{!tt.Meat_Type__c}"/>
+                    <apex:column value="{!tt.Drink__c}"/>
+                    <apex:column value="{!tt.Drink_Included__c}"/>
+                    <apex:column value="{!tt.Utensils_Included__c}"/>
+ 
+                </apex:pageBlockTable>
+                
+                <apex:pageBlockSection >
+            
+                <apex:commandButton value="Checkout" action="{!OrderNow}"/>
+            
+            </apex:pageBlockSection>
+            
+            </apex:pageBlockSection>
+     
+        </apex:pageBlock>
+        
+    </apex:form>
+    
+    <apex:image url="{!$Resource.sandwiches}" styleClass="center"/>
+    
+    <style>
+ 
+     .center {display: block; margin-left: auto; margin-right: auto; width: 50% }
+     
+     .logo {float: right; width: 60px; margin: -65px 20px 0 0}
+    
+ </style>
+
+</apex:page>

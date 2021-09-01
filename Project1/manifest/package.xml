@@ -1,336 +1,364 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <types>
-		<members>*</members>
-		<name>ActionLinkGroupTemplate</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>ApexClass</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>ApexComponent</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>ApexPage</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>ApexTrigger</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>AppMenu</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>ApprovalProcess</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>AssignmentRules</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>AuraDefinitionBundle</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>AuthProvider</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>AutoResponseRules</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>BrandingSet</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>CallCenter</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>Certificate</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>CleanDataService</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>Community</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>ConnectedApp</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>ContentAsset</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>CorsWhitelistOrigin</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>CustomApplication</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>CustomApplicationComponent</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>CustomFeedFilter</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>CustomHelpMenuSection</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>CustomLabels</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>CustomMetadata</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>CustomObject</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>CustomObjectTranslation</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>CustomPageWebLink</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>CustomPermission</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>CustomSite</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>CustomTab</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>Dashboard</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>DataCategoryGroup</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>DelegateGroup</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>Document</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>DuplicateRule</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>EclairGeoData</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>EmailServicesFunction</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>EmailTemplate</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>EscalationRules</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>ExternalDataSource</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>ExternalServiceRegistration</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>FlexiPage</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>Flow</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>FlowCategory</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>FlowDefinition</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>GlobalValueSet</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>GlobalValueSetTranslation</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>HomePageComponent</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>HomePageLayout</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>InstalledPackage</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>Layout</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>Letterhead</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>LightningBolt</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>LightningComponentBundle</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>LightningExperienceTheme</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>MatchingRules</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>NamedCredential</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>NetworkBranding</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>PathAssistant</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>PermissionSet</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>PlatformCachePartition</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>PostTemplate</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>Profile</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>ProfileSessionSetting</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>Queue</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>QuickAction</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>RecommendationStrategy</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>RecordActionDeployment</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>RemoteSiteSetting</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>ReportType</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>Role</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>SamlSsoConfig</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>Scontrol</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>Settings</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>SharingRules</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>SiteDotCom</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>StandardValueSetTranslation</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>StaticResource</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>SynonymDictionary</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>TopicsForObjects</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>TransactionSecurityPolicy</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>Workflow</name>
-	</types>
-    <version>52.0</version>
+
+
+<types>
+	<members>ApplicationControllerExtension</members>
+	<members>ApplicationControllerTest</members>
+	<members>SupplyRequestHandler</members>
+	<members>SupplyRequestTest</members>
+	<members>TransactionHandler</members>
+	<members>TransactionTriggerTest</members>
+	<members>TransactionController</members>
+	<members>TransactionpageControllerTest</members>
+	<members>TaskExtensionControllerTest</members>
+	<members>PopularInventoryControler</members>
+	<members>PopularityObject</members>
+<name>ApexClass</name>
+</types>
+<!--
+<types>
+	<members>*</members>
+	<name>ApexComponent</name>
+</types>-->
+<types>
+	<members>ManageTasks</members>
+	<members>ApplicationPage</members>
+	<members>NewTransaction</members>
+	<members>ThankYouForOrdering</members>
+	<members>PopularItems</members>
+	<name>ApexPage</name>
+</types>
+<types>
+	<members>SupplyRequestTrigger</members>
+	<members>TransactionTrigger</members>
+	<name>ApexTrigger</name>
+</types>
+<types>
+	<members>AppSwitcher</members>
+	<name>AppMenu</name>
+</types>
+<types>
+	<members>Inventory__c.Approval_for_New_Inventory</members>
+	<members>Supply_Request__c.Supply_Request_Aproval1</members>
+	<members>Supply_Request__c.Supply_Request_Aprroval</members>
+	<name>ApprovalProcess</name>
+</types>
+<!--<types>
+	<members>*</members>
+	<name>AssignmentRules</name>
+</types>
+<types>
+	<members>*</members>
+	<name>AuraDefinitionBundle</name>
+</types>
+<types>
+	<members>*</members>
+	<name>AuthProvider</name>
+</types>
+<types>
+	<members>*</members>
+	<name>AutoResponseRules</name>
+</types>
+<types>
+	<members>*</members>
+	<name>BrandingSet</name>
+</types>
+<types>
+	<members>*</members>
+	<name>CallCenter</name>
+</types>
+<types>
+	<members>*</members>
+	<name>Certificate</name>
+</types>
+<types>
+	<members>*</members>
+	<name>CleanDataService</name>
+</types>
+<types>
+	<members>*</members>
+	<name>Community</name>
+</types>
+<types>
+	<members>*</members>
+	<name>ConnectedApp</name>
+</types>
+<types>
+	<members>*</members>
+	<name>ContentAsset</name>
+</types>
+<types>
+	<members>*</members>
+	<name>CorsWhitelistOrigin</name>
+</types>-->
+<types>
+	<members>Ikes_StorePage</members>
+	<name>CustomApplication</name>
+</types>
+<!--
+<types>
+	<members>*</members>
+	<name>CustomApplicationComponent</name>
+</types>
+<types>
+	<members>*</members>
+	<name>CustomFeedFilter</name>
+</types>
+<types>
+	<members>*</members>
+	<name>CustomHelpMenuSection</name>
+</types>
+<types>
+	<members>*</members>
+	<name>CustomLabels</name>
+</types>
+<types>
+	<members>*</members>
+	<name>CustomMetadata</name>
+</types>-->
+<types>
+	<members>Applicant__c</members>
+	<members>Interview__c</members>
+	<members>Inventory__c</members>
+	<members>Supply_Request__c</members>
+	<members>Task__c</members>
+	<members>Task</members>
+	<members>Transaction__c</members>
+	<members>User__c</members>
+	<name>CustomObject</name>
+</types>
+<!--<types>
+	<members>*</members>
+	<name>CustomObjectTranslation</name>
+</types>
+<types>
+	<members>*</members>
+	<name>CustomPageWebLink</name>
+</types>
+<types>
+	<members>*</members>
+	<name>CustomPermission</name>
+</types>
+<types>
+	<members>*</members>
+	<name>CustomSite</name>
+</types>
+<types>
+	<members>*</members>
+	<name>CustomTab</name>
+</types>
+<types>
+	<members>*</members>
+	<name>Dashboard</name>
+</types>
+<types>
+	<members>*</members>
+	<name>DataCategoryGroup</name>
+</types>
+<types>
+	<members>*</members>
+	<name>DelegateGroup</name>
+</types>
+<types>
+	<members>*</members>
+	<name>Document</name>
+</types>
+<types>
+	<members>*</members>
+	<name>DuplicateRule</name>
+</types>
+<types>
+	<members>*</members>
+	<name>EclairGeoData</name>
+</types>
+<types>
+	<members>*</members>
+	<name>EmailServicesFunction</name>
+</types>-->
+<types>
+	<members>unfiled$public/New_Applicant</members>
+	<members>unfiled$public/New_Inventory_Item_Added</members>
+	<members>unfiled$public/New_Supply_Request_Verification</members>
+	<members>unfiled$public/Supply_Request_Unfulfilled</members>
+	<name>EmailTemplate</name>
+</types>
+<!--<types>
+	<members>*</members>
+	<name>EscalationRules</name>
+</types>
+<types>
+	<members>*</members>
+	<name>ExternalDataSource</name>
+</types>
+<types>
+	<members>*</members>
+	<name>ExternalServiceRegistration</name>
+</types>-->
+<types>
+	<members>Ike_s_Home</members>
+	<members>Ike_s_StorePage_UtilityBar</members>
+	<name>FlexiPage</name>
+</types>
+<types>
+	<members>Low_Inventory_Supply_Request</members>
+	<members>SupplyRequestProcess</members>
+	<members>Task_Incomplete</members>
+	<members>TaskUpdateInventory</members>
+	<members>Standard_Task_Updates_Inventory</members>
+	<name>Flow</name>
+</types>
+<!--<types>
+	<members>*</members>
+	<name>FlowCategory</name>
+</types>
+<types>
+	<members>*</members>
+	<name>FlowDefinition</name>
+</types>
+<types>
+	<members>*</members>
+	<name>GlobalValueSet</name>
+</types>
+<types>
+	<members>*</members>
+	<name>GlobalValueSetTranslation</name>
+</types>
+<types>
+	<members>*</members>
+	<name>HomePageComponent</name>
+</types>
+<types>
+	<members>*</members>
+	<name>HomePageLayout</name>
+</types>-->
+<types>
+	<members>Interview__c-Interview Layout</members>
+	<members>Inventory__c-Inventory Layout</members>
+	<members>Task__c-Task Layout</members>
+	<members>Task-Custom Task Layout</members>
+	<name>Layout</name>
+</types>
+<!--<types>
+	<members>*</members>
+	<name>Letterhead</name>
+</types>
+<types>
+	<members>*</members>
+	<name>LightningBolt</name>
+</types>
+<types>
+	<members>*</members>
+	<name>LightningComponentBundle</name>
+</types>
+<types>
+	<members>*</members>
+	<name>LightningExperienceTheme</name>
+</types>
+<types>
+	<members>*</members>
+	<name>MatchingRules</name>
+</types>
+<types>
+	<members>*</members>
+	<name>NamedCredential</name>
+</types>
+<types>
+	<members>*</members>
+	<name>NetworkBranding</name>
+</types>
+<types>
+	<members>*</members>
+	<name>PathAssistant</name>
+</types>
+<types>
+	<members>*</members>
+	<name>PermissionSet</name>
+</types>
+<types>
+	<members>*</members>
+	<name>PlatformCachePartition</name>
+</types>
+<types>
+	<members>*</members>
+	<name>PostTemplate</name>
+</types>-->
+<types>
+	<members>Admin</members>
+	<members>Employee</members>
+	<members>Manager</members>
+	<members>Recruiter</members>
+	<members>Shop Owner</members>
+	<members>Supplier</members>
+	<name>Profile</name>
+</types>
+<!--<types>
+	<members>*</members>
+	<name>Queue</name>
+</types>
+<types>
+	<members>*</members>
+	<name>QuickAction</name>
+</types>
+<types>
+	<members>*</members>
+	<name>RecommendationStrategy</name>
+</types>
+<types>
+	<members>*</members>
+	<name>RecordActionDeployment</name>
+</types>
+<types>
+	<members>*</members>
+	<name>RemoteSiteSetting</name>
+</types>
+<types>
+	<members>*</members>
+	<name>ReportType</name>
+</types>
+<types>
+	<members>*</members>
+	<name>Role</name>
+</types>
+<types>
+	<members>*</members>
+	<name>Scontrol</name>
+</types>
+<types>
+	<members>*</members>
+	<name>SharingRules</name>
+</types>
+<types>
+	<members>*</members>
+	<name>SiteDotCom</name>
+</types>
+<types>
+	<members>*</members>
+	<name>StandardValueSetTranslation</name>
+</types>-->
+<types>
+	<members>Logo</members>
+	<members>sandwiches</members>
+	<members>SiteSamples</members>
+	<members>stackedsandwich</members>
+	<name>StaticResource</name>
+</types>
+<!--<types>
+	<members>*</members>
+	<name>SynonymDictionary</name>
+</types>
+<types>
+	<members>*</members>
+	<name>TopicsForObjects</name>
+</types>
+<types>
+	<members>*</members>
+	<name>TransactionSecurityPolicy</name>
+</types>
+<types>
+	<members>*</members>
+	<name>Workflow</name>
+</types>
+-->
+<version>52.0</version>
 </Package>

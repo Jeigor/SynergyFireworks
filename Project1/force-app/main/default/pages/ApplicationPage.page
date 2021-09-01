@@ -1,0 +1,49 @@
+<apex:page Controller="ApplicationControllerExtension">
+    <apex:sectionHeader title="Application" subtitle="Thank you for Applying!"/>
+    <apex:image url="{!$Resource.Logo}" style="float: right; width: 60px; margin: -65px 20px 0 0" />
+    <style>
+    	
+        
+    </style>
+    <apex:form >
+        <apex:pageBlock >
+            <!--Section to input the applicants contact info-->
+    		<apex:pageBlockSection title="Contact Info">
+                <apex:inputField value="{!App.First_Name__c}"/>
+                <apex:inputField value="{!App.Last_Name__c}"/>
+                <apex:inputField value="{!App.Contact_Email__c}"/>
+                <apex:inputField value="{!App.Contact_Phone_Number__c}"/>
+        	</apex:pageBlockSection>
+            <!--Section for inputting applicant's position info-->
+            <apex:pageBlockSection title="Position Info">
+                <apex:inputField value="{!App.Position__c}"/>
+                <apex:inputField value="{!App.Relevant_Experience__c}"/>
+                <apex:inputField value="{!App.Earliest_Start_Date__c}"/>
+            </apex:pageBlockSection>
+            <!--Section for inputting applicant's daily availability-->
+            <apex:pageBlockSection title="Availability, Must be between 10:00 and 21:00, Input time in a 24 Hour Format, ex. 4:00pm would be 16:00">
+                <apex:inputField value="{!App.Sunday_Start__c}"/>
+                <apex:inputField value="{!App.Sunday_End__c}"/>
+                <apex:inputField value="{!App.Monday_Start__c}"/>
+                <apex:inputField value="{!App.Monday_End__c}"/>
+                <apex:inputField value="{!App.Tuesday_Start__c}"/>
+                <apex:inputField value="{!App.Tuesday_End__c}"/>
+                <apex:inputField value="{!App.Wednesday_Start__c}"/>
+                <apex:inputField value="{!App.Wednesday_End__c}"/>
+                <apex:inputField value="{!App.Thursday_Start__c}"/>
+                <apex:inputField value="{!App.Thursday_End__c}"/>
+                <apex:inputField value="{!App.Friday_Start__c}"/>
+                <apex:inputField value="{!App.Friday_End__c}"/>
+                <apex:inputField value="{!App.Saturday_Start__c}"/>
+                <apex:inputField value="{!App.Saturday_End__c}"/>
+            </apex:pageBlockSection>
+            <!--Button for verifying the info provided is of a correct format and saves the info to a record-->
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!verifyAndSave}" value="Save" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+    <!--Displays the error message if verification fails-->
+    <apex:pageMessages />
+    
+</apex:page>
