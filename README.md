@@ -30,7 +30,9 @@ Controller and extra class for the **Popular Inventory** page
 - PopularInventoryControler
 - PopularityObject
 
+Flow: 
 
+StandardTaskUpdateInventoryFlow
 
 ## What to Import:
 
@@ -43,8 +45,8 @@ Controller and extra class for the **Popular Inventory** page
 
 
 ### Triggers
-- SupplyRequestTrigger
-- TransactionTrigger
+- SupplyRequestTrigger - inventory update
+- TransactionTrigger - inventory update and validation 
 	
 ### Classes
 - PopularityObject.cls
