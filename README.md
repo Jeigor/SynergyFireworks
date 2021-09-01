@@ -37,6 +37,20 @@ Name of Apex Triggers to import:
 	SupplyRequestTrigger
 	TransactionTrigger
 	
+Name of Classes to import:
+	PopularityObject.cls
+	ApplicationControllerExtension
+	ApplicationControllerTest
+	PopularInventoryControler
+	SupplyRequestHandler
+	SupplyRequestTest
+	TaskExtensionController
+	TaskExtensionControllerTest
+	TransactionContoller
+	TransactionController
+	TransactionHandler
+	TransactionTriggerTest
+	TransactionpageControllerTest
 
 
 
