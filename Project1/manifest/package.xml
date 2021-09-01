@@ -3,7 +3,10 @@
 
 	<types>
 		<members>TransactionController</members>
-		<members>TransactionPageControllerTest</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>TransactionpageControllerTest</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
