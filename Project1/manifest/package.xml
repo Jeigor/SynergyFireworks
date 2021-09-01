@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
     
 	<types>
+    <members>ApplicationControllerExtension</members>
+		<members>ApplicationControllerTest</members>
 		<members>SupplyRequestHandler</members>
 		<members>SupplyRequestTest</members>
 		<members>TransactionHandler</members>
 		<members>TransactionTriggerTest</members>
 		<members>TransactionContoller</members>
 		<members>TaskExtensionControllerTest</members>
-		<name>ApexClass</name>
+    <name>ApexClass</name>
 	</types>
 	<!--
 	<types>
@@ -17,6 +20,7 @@
 	</types>-->
 	<types>
 		<members>ManageTasks</members>
+    <members>ApplicationPage</members>
 		<members>NewTransaction</members>
 		<name>ApexPage</name>
 	</types>
@@ -351,6 +355,5 @@
 		<name>Workflow</name>
 	</types>
     -->
-    
     <version>52.0</version>
 </Package>
