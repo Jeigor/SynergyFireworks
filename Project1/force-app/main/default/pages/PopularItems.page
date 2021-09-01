@@ -15,13 +15,12 @@
                 <apex:column value="{!invItem.Name}" headerValue="Name" />
                 <apex:column value="{!invItem.InvAmt}" headerValue="In Stock"/>
                 <apex:column value="{!invItem.SoldAmt}" headerValue="Sold"/>
-                <apex:column value="{!invItem.RecAmt}" headerValue="Reccomended Amount to Order"/>
+                <apex:column value="{!invItem.RecAmt}" headerValue="Recomended Amount to Order"/>
             </apex:pageBlockTable>
 
         </apex:pageBlock>
-        <apex:commandButton action="{!CreateOrder}" value="Order Recommended Products"/>
+        <apex:commandButton action="{!CreateOrder}" value="Order Recomended Products"/>
     </apex:form>
-    <!--apex:pageMessage/-->
 </apex:page>
 
 <!-- make new order based on popular transactions
