@@ -1,4 +1,7 @@
-<apex:page controller="PopularInventoryControler">
+<apex:page controller="PopularInventoryControler" showHeader="false">
+    <apex:sectionHeader title="Popular Inventory Overview" subtitle="Here's a recomended order based on our recient transactions"/>
+    <apex:image url="{!$Resource.Logo}" style="float: right; width: 60px; margin: -65px 20px 0 0" />    
+	<style>"{!$Resource.TestCSSFile}" </style>
     <apex:form >
 		<apex:pageBlock title="Stock by Popularity">		            
            
