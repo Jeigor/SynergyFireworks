@@ -6,7 +6,8 @@
 		<members>SupplyRequestTest</members>
 		<members>TransactionHandler</members>
 		<members>TransactionTriggerTest</members>
-		<members>TaskExtensionController</members>
+		<members>TransactionContoller</members>
+		<members>TaskExtensionControllerTest</members>
 		<name>ApexClass</name>
 	</types>
 	<!--
@@ -16,6 +17,7 @@
 	</types>-->
 	<types>
 		<members>ManageTasks</members>
+		<members>NewTransaction</members>
 		<name>ApexPage</name>
 	</types>
 	<types>
@@ -29,8 +31,8 @@
 	</types>
 	<types>
 		<members>Inventory__c.Approval_for_New_Inventory</members>
-		<members>SupplyRequest__c.Supply_Request_Aproval1</members>
-		<members>SupplyRequest__c.Supply_Request_Aprroval</members>
+		<members>Supply_Request__c.Supply_Request_Aproval1</members>
+		<members>Supply_Request__c.Supply_Request_Aprroval</members>
 		<name>ApprovalProcess</name>
 	</types>
 	<!--<types>
@@ -271,12 +273,17 @@
 	<types>
 		<members>*</members>
 		<name>PostTemplate</name>
-	</types>
+	</types>-->
 	<types>
-		<members>*</members>
+		<members>Admin</members>
+		<members>Employee</members>
+		<members>Manager</members>
+		<members>Recruiter</members>
+		<members>Shop Owner</members>
+		<members>Supplier</members>
 		<name>Profile</name>
 	</types>
-	<types>
+	<!--<types>
 		<members>*</members>
 		<name>Queue</name>
 	</types>
