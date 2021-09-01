@@ -1,6 +1,7 @@
 <apex:page controller="TransactionController" >
     
-    <apex:sectionHeader title="Ready to Order?"/>
+    <apex:sectionHeader title="Ready to Order?" />
+    <apex:image url="{!$Resource.Logo}" style=" float: right; width: 60px; margin: -65px 20px 0 0" />
     
     <apex:form >
         
@@ -24,7 +25,7 @@
 
             <apex:pageBlockSection title="Cart">
             	
-                <apex:pageBlockTable value="{!Tranlist}" var="tt">
+                <apex:pageBlockTable value="{!Tranlist}" var="tt" >
                     
                     <apex:column value="{!tt.Bread_Type__c}"/>
                     <apex:column value="{!tt.Meat_Type__c}"/>
@@ -45,5 +46,15 @@
         </apex:pageBlock>
         
     </apex:form>
+    
+    <apex:image url="{!$Resource.Sandwiches}" styleClass="center"/>
+    
+    <style>
+ 
+     .center {display: block; margin-left: auto; margin-right: auto; width: 50% }
+     
+     .logo {float: right; width: 60px; margin: -65px 20px 0 0}
+    
+ </style>
 
 </apex:page>

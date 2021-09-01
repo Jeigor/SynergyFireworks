@@ -1,12 +1,13 @@
 <apex:page controller="TransactionController">
     
-    <apex:sectionHeader title="Thank You For Ordering"/>
+    <apex:sectionHeader title="Thank You For Ordering"  />
+    <apex:image url="{!$Resource.Logo}" style=" float: right; width: 60px; margin: -65px 20px 0 0" />
     
     <apex:pageBlock >
     	
-        <apex:pageBlockSection title="Your Order Invoice">
+        <apex:pageBlockSection title="Your Order Invoice" >
             
-            <apex:pageBlockTable value="{!Tranlist}" var="tt">
+            <apex:pageBlockTable value="{!Tranlist}" var="tt" >
                     
                     <apex:column value="{!tt.Bread_Type__c}"/>
                     <apex:column value="{!tt.Meat_Type__c}"/>
@@ -20,5 +21,16 @@
     
     </apex:pageBlock>
     
+    <apex:image url="{!$Resource.Sandwiches}" styleClass="center"/>
+    
+    <style>
+ 
+     .center {display: block; margin-left: auto; margin-right: auto; width: 50% }
+     
+     .logo {float: right; width: 60px; margin: -65px 20px 0 0}
+    
+ </style>
+    
+
     
 </apex:page>

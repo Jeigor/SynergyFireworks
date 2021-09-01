@@ -13,10 +13,11 @@ public class TransactionController {
 }
     //add to cart action
     public void addCart() {
-        
+
         Tranlist.add(tran);
         tran = null;
         tran = new Transaction__c();
+    
  
         
     }
