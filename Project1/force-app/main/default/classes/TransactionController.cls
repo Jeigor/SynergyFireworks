@@ -20,7 +20,7 @@ public class TransactionController {
         tran = null;
         tran = new Transaction__c();
         
-        /* If you want this to work with Validation or inventory out of stock... you need to wrap this in a Try... catch throw customer exception block... 
+        /* If you want this to work with Validation or inventory out of stock... you need to wrap this in a Try... catch throw custom exception block... 
         
         below is how you would test for it
         
