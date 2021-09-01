@@ -19,10 +19,14 @@ public class PopularInventoryControler {
                 */
                 
                 //solution if Supply_Request__c format does not change
-                for(integer i = 0; i<item.RecAmt; i++) {
+//                for(integer i = 0; i<item.RecAmt; i++) {
                     Supply_Request__c supplyOrder = new Supply_Request__c();
                     supplyOrder.IsCompleted__c = false;        
                     switch on string.valueOf(item.Name){
+                        when 'Baguette Bread','Brioche Bread','Rye Bread','Sourdough Bread'{
+                            supplyOrder.SupplyRequest__c = 'Bread';
+                            item.Name = item.Name.Left(item.name.indexof(' '));
+                        }
                         when 'Baguette','Brioche','Rye','Sourdough'{
                             supplyOrder.SupplyRequest__c = 'Bread';
                         }
@@ -34,14 +38,16 @@ public class PopularInventoryControler {
                         }
                     }
                     supplyOrder.Supply_amount__c = item.Name;
+                    system.debug('adding order:');
+                    system.debug(supplyOrder);
                     neededSupplies.add(supplyOrder);
-                }
+ //               }
 
             }
         }
         // Inserting Supplies
         insert neededSupplies;
-        ApexPages.addmessage(new ApexPages.message(ApexPages.severity.CONFIRM,'Supply Requests Placed')); 
+//        ApexPages.addmessage(new ApexPages.message(ApexPages.severity.CONFIRM,'Supply Requests Placed')); 
     }
 
     //Initializing
