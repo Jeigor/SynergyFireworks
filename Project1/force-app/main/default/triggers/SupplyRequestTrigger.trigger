@@ -4,13 +4,13 @@ trigger SupplyRequestTrigger on Supply_Request__c (before insert, before update,
             
         }
         when BEFORE_UPDATE {
-            SupplyRequestHandler.SupplyInventoryUpdate(trigger.new, trigger.oldmap);
+            //SupplyRequestHandler.SupplyInventoryUpdate(trigger.new, trigger.oldmap);
         }
         when BEFORE_DELETE {
-            SupplyRequestHandler.DeletionCheck(trigger.old);
+            //SupplyRequestHandler.DeletionCheck(trigger.old);
         }
         when AFTER_INSERT {
-            SupplyRequestHandler.SupplyInventoryInsertCheck(trigger.new);
+            //SupplyRequestHandler.SupplyInventoryInsertCheck(trigger.new);
         }
         when AFTER_UPDATE {
             

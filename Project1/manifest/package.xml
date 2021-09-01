@@ -3,14 +3,17 @@
 
 
 <types>
-<members>ApplicationControllerExtension</members>
+	<members>ApplicationControllerExtension</members>
 	<members>ApplicationControllerTest</members>
 	<members>SupplyRequestHandler</members>
 	<members>SupplyRequestTest</members>
 	<members>TransactionHandler</members>
 	<members>TransactionTriggerTest</members>
-	<members>TransactionContoller</members>
+	<members>TransactionController</members>
+	<members>TransactionpageControllerTest</members>
 	<members>TaskExtensionControllerTest</members>
+	<members>PopularInventoryControler</members>
+	<members>PopularityObject</members>
 <name>ApexClass</name>
 </types>
 <!--
@@ -20,8 +23,10 @@
 </types>-->
 <types>
 	<members>ManageTasks</members>
-<members>ApplicationPage</members>
+	<members>ApplicationPage</members>
 	<members>NewTransaction</members>
+	<members>ThankYouForOrdering</members>
+	<members>PopularItems</members>
 	<name>ApexPage</name>
 </types>
 <types>
