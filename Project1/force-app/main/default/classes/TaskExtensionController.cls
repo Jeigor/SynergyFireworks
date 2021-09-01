@@ -2,12 +2,14 @@ public with sharing class TaskExtensionController {
     
     public List<Task> tasList{get{
         if(tasList==null){
+            //first only returns a list of tasts that is not complete or incomplete
             List<task> tass = [SELECT OwnerId, Subject, ActivityDate, Priority, Status FROM Task WHERE NOT Status  Like '%Complete%' Order by ActivityDate];
+            //uses security to strip all the records that would be inaccessable to the user
             SObjectAccessDecision dec = Security.stripInaccessible(AccessType.READABLE, tass);
-            this.tasList = dec.getRecords();}   
+            //sets the tasList to be the records that the user would have access to 
+            this.tasList = dec.getRecords();}
         return this.tasList;}set;}
     public Task taskToInsert {get; set;}
-    public String access {get;set;}
     
     public TaskExtensionController(){
         taskToInsert = new Task();
@@ -23,22 +25,22 @@ public with sharing class TaskExtensionController {
     }*/
     
     public PageReference addNewTask(){
-        insert taskToInsert;
-        taskToInsert = null;
-        taskToInsert = new Task();
+        //enforces security on the task creation so that the is actually able to insert a task before inserting into the database
+        if(Schema.SObjectType.Task.isCreateable()){
+            insert taskToInsert;
+            taskToInsert = null;
+            taskToInsert = new Task();
+        }
+        else{
+            ApexPages.addmessage(new ApexPages.message(ApexPages.severity.FATAL,'You do not have access to insert a task'));
+        }
+        
         return null;
     }
     public PageReference updateExistingTask(){
         update tasList;
        	this.tasList = null;
-        /*for(Integer i =0; i<tasList.size();i++){
-            if(tasList[i].status=='Complete'||tasList[i].status=='Incomplete'){
-                tasList.remove(i);
-            }
-        }*/
         return null;
     }
-    public PageReference refreshPage(){
-        return null;
-    }
+
 }
