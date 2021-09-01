@@ -63,5 +63,17 @@ StandardTaskUpdateInventoryFlow
 - TransactionTriggerTest
 - TransactionpageControllerTest
 
+## Suggestions for future implementations
+
+- Marketing
+	- sell more sandwitches
+	- look into more than one marketing strategy
+
+- create actual sandwitch types 
+- Login page??
+- item sold statistics
+	- show purchases over a period of time
+	- make estimations about the future
+
 
 
