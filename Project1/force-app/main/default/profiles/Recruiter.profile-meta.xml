@@ -30,6 +30,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>TaskExtensionController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>TaskExtensionControllerTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>

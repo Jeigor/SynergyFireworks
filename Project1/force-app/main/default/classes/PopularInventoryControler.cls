@@ -19,11 +19,17 @@ public class PopularInventoryControler {
                 */
                 
                 //solution if Supply_Request__c format does not change
-//                for(integer i = 0; i<item.RecAmt; i++) {
                     Supply_Request__c supplyOrder = new Supply_Request__c();
                     supplyOrder.IsCompleted__c = false;        
                     switch on string.valueOf(item.Name){
-                        when 'Baguette Bread','Brioche Bread','Rye Bread','Sourdough Bread'{
+                        // there are two different 'bread' sections because of the inconsistant naming conventions. 
+                        // this first 'when' removes 'bread' from the name so that the Supply Request object will accept item.name 
+                        // the second 'when' only gets triggered if the item.name has already been through the first 'when'
+                        // a way to make this ugly hard coded code better would be to have a way of catigorizing the 
+                        // objects within the org OR changing the supply order object to not worry about the catigorization.
+                        // also something the supplyorder object could really use is an integer field for requesting more 
+                        // than one of a kind of item
+                        when 'Baguette Bread','Brioche Bread','Rye Bread','Sourdough Bread'{ 
                             supplyOrder.SupplyRequest__c = 'Bread';
                             item.Name = item.Name.Left(item.name.indexof(' '));
                         }
@@ -41,12 +47,12 @@ public class PopularInventoryControler {
                     system.debug('adding order:');
                     system.debug(supplyOrder);
                     neededSupplies.add(supplyOrder);
- //               }
 
             }
         }
         // Inserting Supplies
         insert neededSupplies;
+        // I wanted to display a success message to the user with this function. It doesn't break the website, but nothing happens either.
 //        ApexPages.addmessage(new ApexPages.message(ApexPages.severity.CONFIRM,'Supply Requests Placed')); 
     }
 

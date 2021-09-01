@@ -4,7 +4,7 @@
     <apex:form >
 		<apex:pageBlock title="Stock by Popularity">		            
            
-<!--            <apex:pageBlockSection >
+<!--    I wanted to make this filter work and never could        <apex:pageBlockSection >
                 <apex:selectList label="FilterType" size="1" value="{!tableFilter}" onselect="{!updateTableView}">
                     <apex:selectOption itemvalue="All"/>
                     <apex:selectOption itemvalue="Breads"/>
@@ -24,10 +24,3 @@
         <apex:commandButton action="{!CreateOrder}" value="Order Recomended Products"/>
     </apex:form>
 </apex:page>
-
-<!-- make new order based on popular transactions
-	bind filter val to another variable and run queiry
-
-	run order quiery 
-
--->

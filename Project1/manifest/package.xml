@@ -12,6 +12,7 @@
 	<members>TransactionController</members>
 	<members>TransactionpageControllerTest</members>
 	<members>TaskExtensionControllerTest</members>
+	<members>TaskExtensionController</members>
 	<members>PopularInventoryControler</members>
 	<members>PopularityObject</members>
 <name>ApexClass</name>
