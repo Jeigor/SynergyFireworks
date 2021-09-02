@@ -76,4 +76,8 @@ StandardTaskUpdateInventoryFlow
 	- make estimations about the future
 
 
+## Suggestions for Deploying to Org
+
+-Applicant custom object
+	-Check if all the fields are readable for the roles needed
 
