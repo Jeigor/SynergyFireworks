@@ -5,8 +5,8 @@
       "default": true
     }
   ],
-  "name": "Project1",
+  "name": "Project2",
   "namespace": "",
-  "sfdcLoginUrl": "https://mindful-shark-iogbb-dev-ed.lightning.force.com/lightning/n/trlhdtips__Welcome",
+  "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "52.0"
 }
