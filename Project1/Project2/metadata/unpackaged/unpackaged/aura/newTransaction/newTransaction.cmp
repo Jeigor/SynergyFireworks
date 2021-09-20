@@ -1,0 +1,25 @@
+<aura:component controller="NewTransactionController">
+    <aura:attribute name="trans" type="Transaction__c[]" />    
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>    
+    <aura:handler name="addTran" event="c:addTran"
+    	action="{!c.handleAddTran}"/>
+    <img class="topImage" src="https://raw.githubusercontent.com/Jeigor/SynergyFireworks/main/Project1/force-app/main/default/staticresources/Logo.png"/>    
+        <lightning:layoutItem class="header" padding="horizontal-small">
+            <lightning:icon iconName="action:goal" alternativeText="Camping List"/>
+        	<div class="page-section page-header">
+            	<h1 class="slds-text-heading_label">Ready to Order?</h1>
+                <h2 class="slds-text-heading_medium">Lactose Intolerance? Ask for Vegan Cheese</h2>
+            </div>
+        </lightning:layoutItem>      
+    <lightning:layoutItem class="form" padding="around-small" size="6">
+        <c:newTransactionForm/>
+    </lightning:layoutItem>    
+    <img class="bottomImage" src="https://raw.githubusercontent.com/Jeigor/SynergyFireworks/main/Project1/force-app/main/default/staticresources/Logo.png"/>
+    <lightning:card title="{!v.trans}">
+    	<p class="slds-p-horizontal_small">
+        	<aura:iteration items="{!v.trans}" var="trans">
+                <c:newTransactionCart tran="{!trans}"/>
+            </aura:iteration>
+        </p>
+    </lightning:card>
+</aura:component>
