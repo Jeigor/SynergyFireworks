@@ -1,0 +1,44 @@
+<aura:component controller="CreateContactApex" implements="forceCommunity:availableForAllPageTypes" access="global" >
+    <aura:attribute name="ContactEmail" type="String" default=" " />
+      <aura:attribute name="ContactPassword" type="String" default=" " />
+      <aura:attribute name="LastName" type="String" default=" " />
+          <aura:attribute name="FirstName" type="String" default=" " />
+    <aura:attribute name="Phone" type="String" />
+    <aura:attribute name="Address" type="String"/>
+    <aura:attribute name="ContactObj" type="Contact" default="{'sobjectType':'Contact', 'FirstName': ' ','LastName':' ',
+                                                                'Username__c': ' ', 'Password__c':' ', 
+                                                            'Phone':' ' }" /> 
+    
+     <aura:attribute name="recordSaveError" type="String"
+                description="An error message bound to force:recordData"/>
+      <img class="topImage" src="https://raw.githubusercontent.com/Jeigor/SynergyFireworks/main/Project1/force-app/main/default/staticresources/Logo.png"/>
+   <!-- force:recordData
+                aura:id="App"
+    			fields="Name,Username__c,Password__c"
+    			targetFields="{!v.ContactObj}"
+                targetError="{!v.recordSaveError}"
+  				mode="EDIT"
+    /> -->
+ 
+
+       <lightning:recordEditForm objectApiName="Contact" >
+            
+      <lightning:input label="Contact First Name" value="{!v.ContactObj.FirstName}"/>
+      <lightning:input label="Contact Last Name" value="{!v.ContactObj.LastName}"/>
+      <lightning:input label="Contact Email" value="{!v.ContactObj.Username__c}" />
+      <lightning:input label="Phone" value="{!v.ContactObj.Phone}"/>
+
+        <br/>
+
+    </lightning:recordEditForm>
+       <br/>
+
+      <lightning:button label="Save Contact" variant="brand" class="slds-m-bottom_medium" onclick="{!c.SaveCont}" /> 
+ 
+     <br/>
+     <br/>
+    <br/>
+      <img class="bottomImage" src="https://raw.githubusercontent.com/Jeigor/SynergyFireworks/main/Project1/force-app/main/default/staticresources/Logo.png"/>
+
+
+</aura:component>

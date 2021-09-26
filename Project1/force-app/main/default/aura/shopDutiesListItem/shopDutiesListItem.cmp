@@ -1,0 +1,30 @@
+<aura:component controller= "ShopDutiesListItemApexController">
+	<aura:attribute name="item" type="Shop_Duty__c" 
+                    required="true"/>
+     <aura:registerEvent name="updateItemEvent" type="c:updateDutiesListItemEvent"/>
+    
+    <p>{!v.item.Name}</p>
+    <p>Description:
+        {!v.item.Description__c}
+    </p>
+    <p>{!v.item.Duty_Days__c}</p>
+    <p>
+        
+       
+            <lightning:input type="toggle"
+                             label="Active?"
+                             aura:id="toggleactive"
+                             class="slds-p-around_small"
+                             checked="{!v.item.Active__c}"
+                             messageToggleActive="Yes"
+                             messageToggleInactive="No"
+                             onchange="{!c.handleActiveChange}"
+                             />
+     
+      
+     </p>
+    <div>
+        
+       <c:shopDutiesAssignTaskModal shopDutyObject="{!v.item}"/>
+    </div>
+</aura:component>

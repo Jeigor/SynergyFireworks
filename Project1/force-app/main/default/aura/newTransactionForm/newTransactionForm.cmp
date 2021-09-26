@@ -1,0 +1,52 @@
+<aura:component >
+    <aura:attribute name="newTran" type="Transaction__c"
+    	default="{ 'sobjectType': 'Transaction__c', 
+                 'Drink_Included__c': false, 
+                 'Utensils_Included__c': false }"/>
+    <aura:registerEvent name="addTran" type="c:addTran"/>
+	<div aria-labelledby="transactionform">        	
+            <fieldset class="slds-box slds-theme_default slds-container_small">
+            	<legend id="transactionform" class="slds-text-heading_small
+                  slds-p-vertical_medium">
+                  Make a sandwhich
+                </legend>
+                <form class="slds-form_stacked">
+                    <lightning:select aura:id="bread" name="bread" label="Choose Your Bread" required="true">
+                        <option value="">Select</option>
+                        <option value="Baguette">Baguette</option>
+                        <option value="Rye">Rye</option>
+                        <option value="Sourdough">Sourdough</option>
+                        <option value="Brioche">Brioche</option>
+    				</lightning:select>
+                    <lightning:select aura:id="meat" name="meat" label="Choose Your Meat">
+                        <option value="">Select</option>
+                        <option value="Beef">Beef</option>
+                        <option value="Steak">Steak</option>
+                        <option value="Turkey">Turkey</option>
+                        <option value="Ham">Ham</option>
+    				</lightning:select>
+                    <lightning:input type="toggle" 
+                                     aura:id="transactionform" 
+                                     label="Add a drink?" 
+                                     name="drink?"
+                                     messageToggleActive="Yes"
+                             		 messageToggleInactive="No"
+                                     checked="{!v.newTran.Drink_Included__c}"/>                    
+                    <aura:renderif isTrue="{!v.newTran.Drink_Included__c}">
+                        <lightning:select aura:id="drink" name="drink" label="Choose Your Drink">
+                            <option value="">Select</option>
+                            <option value="Water">Water</option>
+                            <option value="Coke Product">Coke Product</option>                        
+                        </lightning:select>                        
+                    </aura:renderif>
+                    <lightning:input type="checkbox" aura:id="transactionform" label="Add Utensils?"
+                                             name="Utensils"
+                                             checked="{!v.newTran.Utensils_Included__c}" />
+                    <lightning:button label="Create Order"
+                                             class="slds-m-top_medium"
+                                             variant="brand"
+                                             onclick="{!c.addOrder}"/>
+                </form>
+            </fieldset>            
+        </div>
+</aura:component>

@@ -1,0 +1,67 @@
+<aura:component controller="ShopDutiesListApexController">
+    <aura:attribute name="newItem" type="Shop_Duty__c" default="{ 'sobjectType': 'Shop_Duty__c',
+                        'Name': '',
+                        'Description__c':'',
+                        'Active__c': true,
+						'Duty_Days__c':''}"/>
+     <aura:attribute name="viewlistoptionsweekdays" type="List" default="[
+     {'label': 'Monday', 'value': 'Monday'},
+    {'label': 'Tuesday', 'value': 'Tuesday'},       
+      {'label': 'Wednesday', 'value': 'Wednesday'},
+     {'label': 'Thursday', 'value': 'Thursday'}, 
+     {'label': 'Friday', 'value': 'Friday'}, 
+    {'label': 'Saturday', 'value': 'Saturday'},
+       {'label': 'Sunday', 'value': 'Sunday'},                                                          
+    ]"/>
+    <aura:attribute name="checkboxgroupvalueweekdays" type="List" default="Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday"/>
+    <aura:registerEvent name="addItem" type="c:addShopDutyEvent"/>
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    <!--<aura:handler name="clearAddForm" event="c:clearAddShopDutyFormEvent"
+        action="{!c.handleResetForm }"/>-->
+	<div aria-labelledby="newshopdutyform">
+        <!-- BOXED AREA -->
+        <fieldset class="slds-box slds-theme_default slds-container_small">
+        <legend id="shopdutyform" class="slds-text-heading_small
+          slds-p-vertical_medium">
+          Add New Shop Duty
+        </legend>
+        <!-- CREATE NEW Shop Duty FORM -->
+        <form class="slds-form_stacked">
+            <lightning:input aura:id="shopdutyform" label="New Shop Duty Name"
+                             name="shopdutyname"
+                             value="{!v.newItem.Name}"
+                             required="true"/>
+            <lightning:input aura:id="shopdutyform" label="Duty Description"
+                             name="shopdutydescription"
+                             value="{!v.newItem.Description__c}"
+                             required="false"/>
+           <!--
+			<lightning:input type="number" aura:id="shopdutyform" label="Quantity"
+                             name="shopdutyquantity"
+                             min="1"
+                             formatter="number"
+                             step="1"
+                             value="{!v.newItem.Shop_Duty_Quantity__c}"
+                             messageWhenRangeUnderflow="Enter a quantity that's at least 1"/>
+            -->
+            <lightning:input type="checkbox" aura:id="shopdutyform" label="Active?"
+                             name="shopdutyactive"
+                             checked="{!v.newItem.Active__c}"/>
+            
+            <lightning:checkboxGroup name="listviewselectcheckboxgroupweekdays"
+                             label="Default Duty Days"
+                             options="{! v.viewlistoptionsweekdays }"
+                             value="{! v.checkboxgroupvalueweekdays }"
+                             onchange="{! c.handleListViewCheckboxGroupWeekdaysChange }"/>
+            
+            <lightning:button label="Add New Duty"
+                              class="slds-m-top_medium"
+                              variant="brand"
+                              onclick="{!c.clickCreateItem }"/>
+           
+        </form>
+        <!-- / CREATE NEW shop duty FORM -->
+      </fieldset>
+      <!-- / BOXED AREA -->
+    </div>
+</aura:component>

@@ -1,0 +1,28 @@
+<aura:component implements="lightning:actionOverride,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+	
+    <aura:attribute name="shopDutyObject" type="Shop_Duty__c" default="{ 'sobjectType': 'Shop_Duty__c',
+                        'Name': '',
+                        'Description__c':'',
+                        'Active__c': true,
+						'Duty_Days__c':''}"/>
+    <aura:handler name="closeModalEvent" event="c:closeDutiesAssignTaskModalEvent" action="{!c.closeModalEvent}"/>
+    <lightning:button label="Assign Task"
+            onclick="{!c.openmodal}" />
+   
+        <div role="dialog" tabindex="-1" aria-labelledby="header43" aura:id="Modalbox" class="slds-modal slds-modal_large">
+            <div class="slds-modal__container" style="width: 65%;">
+                <div class="slds-modal__header">
+                	Assign Task
+                </div>
+                <div class="slds-modal__content slds-p-around–medium">
+                    
+                    <c:shopDutiesAssignTaskCreate objShop_Duty__c="{!v.shopDutyObject}"/>
+                  </div>
+                
+                <div class="slds-modal__footer">
+                    <ui:button label="Cancel" press="{!c.closeModal}"  />
+                </div>
+            </div>
+        </div>
+        <div class="slds-backdrop " aura:id="Modalbackdrop"></div>   
+</aura:component>

@@ -1,0 +1,7 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
+	
+    <div>
+        <c:newTransaction/>       
+    </div>
+
+</aura:component>

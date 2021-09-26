@@ -1,0 +1,4 @@
+<aura:event type="COMPONENT" description="Close the modal window" >
+
+	<aura:attribute name="closeMessage" type="String"/>
+</aura:event>

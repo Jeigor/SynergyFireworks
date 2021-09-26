@@ -1,0 +1,54 @@
+<aura:component controller="SaveAppApex" implements="forceCommunity:availableForAllPageTypes" access="global">
+    <aura:attribute name="Name" type="String"/>
+    
+    <aura:attribute name="ContactEmail" type="String"/>
+    <aura:attribute name="ContactPhone" type="Integer"/>
+    <aura:attribute name="AppObject" type="Object"/>
+    <aura:attribute name="AvalibleWeekHours" type="DateTime"/>
+    <aura:attribute name="AvalibleWeekendHours" type="DateTime"/>
+    <aura:attribute name="Position" type="String"/>
+    <aura:attribute name="RelevantExperience" type="String"/>
+    <aura:attribute name="EarliestStartDate" type="Date"/>
+   
+    <aura:attribute name="App" type="Applicant__c" default="{'sobjectType':'Applicant__c', 'Name': ' ' }" /> 
+     <aura:attribute name="recordSaveError" type="String"
+                description="An error message bound to force:recordData"/>
+    <img class="topImage" src="https://raw.githubusercontent.com/Jeigor/SynergyFireworks/main/Project1/force-app/main/default/staticresources/Logo.png"/>
+    
+<br/>
+    <br/>
+    <!--<force:recordData
+                aura:id="App"
+    			recordId="{!v.recordId}"
+    			fields="Name,Email,Phone"
+    			targetFields="{!v.AppChange}"
+                targetError="{!v.recordSaveError}"
+  				mode="EDIT"
+                     
+ 
+    /> -->
+     <div class="slds-p-around_medium">
+         
+    <lightning:recordEditForm objectApiName="Applicant__c">
+    <lightning:input label="Contact Name" value="{!v.App.Name}"/>
+     
+      <lightning:input label="Contact Email" value="{!v.App.ContactEmail}" />
+      <lightning:input label="Contact Phone Number" value="{!v.App.Contact_Phone_Number__c}"/>
+
+        <br/>
+  		<br/>
+      <lightning:input label="Earliest Start Date" type="Date" value="{!v.App.Earliest_Start_Date__c}"/>
+      <lightning:input label="Relevant Experience" value="{!v.App.Relevant_Experience__c}" />
+      <lightning:input label="Avalible Week Hours"  value="{!v.App.Week_Hours__c}" />
+      <lightning:input label="Avalible Weekend Hours" value="{!v.App.Weekend_hours__c}"/>
+   <lightning:button label="Save Application" variant="brand" class="slds-m-top_medium" onclick="{!c.SaveApp}" /> 
+    </lightning:recordEditForm>
+         <br/>
+         <br/>
+         <br/>
+     </div>    
+    
+   <img class="bottomImage" src="https://raw.githubusercontent.com/Jeigor/SynergyFireworks/main/Project1/force-app/main/default/staticresources/Logo.png"/>
+  
+
+    </aura:component>

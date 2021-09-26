@@ -113,11 +113,11 @@
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>Ikes_StorePage</name>
-        <type>CustomApplication</type>
+        <name>DEVHUB_uirxqfk9iy3qy327s5ea</name>
+        <type>ConnectedApp</type>
     </appMenuItems>
     <appMenuItems>
-        <name>Ike Customer site</name>
+        <name>CODEBREAKERSANDWICHES</name>
         <type>Network</type>
     </appMenuItems>
 </AppMenu>

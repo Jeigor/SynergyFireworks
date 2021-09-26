@@ -15,6 +15,8 @@ public class ApplicationControllerExtension {
     //Both will return an exception if not matching the criteria
     public PageReference verifyAndSave() {
         SameEmail = False;
+        // getting list of applicants 
+        // comparing Email to list of applicants emails for same
         List<Applicant__c> AppList = [SELECT Contact_email__c FROM Applicant__c];
         for(Applicant__c appl : AppList){
             if(appl.Contact_email__c == App.Contact_Email__c) {
@@ -25,6 +27,7 @@ public class ApplicationControllerExtension {
             if(SameEmail == True){
             	throw new ApplicationException('Email already connected to an application');
         	}
+            //Can ALL be handled in a validation rule
             else if(App.Sunday_Start__c < Time.newInstance(10, 0, 0, 0) || App.Monday_Start__c < Time.newInstance(10, 0, 0, 0) || 
                    App.Tuesday_Start__c < Time.newInstance(10, 0, 0, 0) || App.Wednesday_Start__c < Time.newInstance(10, 0, 0, 0) ||
                    App.Thursday_Start__c < Time.newInstance(10, 0, 0, 0) || App.Friday_Start__c < Time.newInstance(10, 0, 0, 0) ||

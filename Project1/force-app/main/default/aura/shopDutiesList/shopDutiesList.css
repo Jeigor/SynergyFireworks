@@ -1,0 +1,21 @@
+.THIS.topImage {
+    float: right; width: 60px; border: 3px solid BlanchedAlmond
+}
+
+.THIS.bottomImage {
+    display: block; margin-left: auto; margin-right: auto; width: 10%; border: 3px solid BlanchedAlmond
+}
+
+.THIS.form {
+    margin-left: 37%; 
+}
+
+.THIS.header {
+    margin-left: 37%; 
+}
+.THIS .slds-checkbox {
+display: inline !important;
+}
+.THIS {
+    background-color: Beige
+}

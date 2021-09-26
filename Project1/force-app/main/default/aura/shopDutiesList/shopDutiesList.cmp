@@ -1,0 +1,78 @@
+<aura:component controller="ShopDutiesListApexController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+      
+    
+    <aura:attribute name="items" type="Shop_Duty__c[]" />
+    <aura:attribute name="filteredItems" type="Shop_Duty__c[]" />
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+     <!--<aura:handler name="updateItem" event="c:addItemEvent"
+        action="{!c.handleUpdateItem}"/>-->
+     <aura:handler name="addItem" event="c:addShopDutyEvent"
+        action="{!c.handleAddItem }"/>
+    <aura:handler name="updateItemEvent" event="c:updateDutiesListItemEvent"
+        action="{!c.handleUpdateItemList }"/>
+     <!--<aura:registerEvent name="clearAddForm" type="c:clearAddShopDutyFormEvent"/> -->
+    <!--<aura:method name="createItemMethod" action="{!c.createItem}"
+      description="createItem controller function" />-->
+    <!-- PAGE HEADER -->
+    <lightning:layout class="slds-page-header slds-page-header_object-home">
+        <lightning:layoutItem>
+            <lightning:icon iconName="standard:scan_card" alternativeText="My Shop Duties"/>
+        </lightning:layoutItem>
+        <lightning:layoutItem padding="horizontal-small">
+            <div class="page-section page-header">
+                <h1 class="slds-text-heading_label">Shop Duties</h1>
+                <h2 class="slds-text-heading_medium">Shop Duties</h2>
+            </div>
+        </lightning:layoutItem>
+    </lightning:layout>
+    <!-- / PAGE HEADER -->
+    <!-- NEW Shop Duty Item FORM -->
+    <lightning:layout>
+        <lightning:layoutItem padding="around-small" size="6">
+        <!-- [[ Shop Duty form goes here ]] -->
+                <!-- CREATE NEW Shop Duty Item -->
+    <c:shopDutiesListForm/>
+    <!-- / CREATE NEW Shop Duty -->
+        </lightning:layoutItem>
+    </lightning:layout>
+    <!-- / NEW Shop Duty FORM -->
+        <aura:attribute name="shopDutyItems" type="Shop_Duty__c[]"/>
+   
+      <aura:attribute name="viewlistactiveoptions" type="List" default="[
+    {'label': 'Active', 'value': '1'},
+    {'label': 'Inactive', 'value': '2'},                                   
+    ]"/>
+    <aura:attribute name="viewlistoptionsweekdays" type="List" default="[
+     {'label': 'Monday', 'value': 'Monday'},
+    {'label': 'Tuesday', 'value': 'Tuesday'},       
+    {'label': 'Wednesday', 'value': 'Wednesday'},
+    {'label': 'Thursday', 'value': 'Thursday'}, 
+     {'label': 'Friday', 'value': 'Friday'}, 
+    {'label': 'Saturday', 'value': 'Saturday'},
+       {'label': 'Sunday', 'value': 'Sunday'},                                                          
+    ]"/>
+    <aura:attribute name="checkboxgroupvalueweekdays" type="List" default="Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday"/>
+	 <aura:attribute name="checkboxgroupvalueactive" type="List" default="1"/>
+    <aura:attribute name="checkboxgroupvalue" type="List" default="1"/>
+    <lightning:card title="View List Options">
+        <lightning:checkboxGroup name="listviewselectcheckboxgroupactive"
+                             label="View Duties"
+                             options="{! v.viewlistactiveoptions }"
+                             value="{! v.checkboxgroupvalueactive }"
+                             onchange="{! c.handleListViewCheckboxGroupActiveChange }"/>
+         <lightning:checkboxGroup name="listviewselectcheckboxgroupweekdays"
+                             label="View Weekday Duties"
+                             options="{! v.viewlistoptionsweekdays }"
+                             value="{! v.checkboxgroupvalueweekdays }"
+                             onchange="{! c.handleListViewCheckboxGroupWeekdaysChange }"/>
+         
+    </lightning:card>
+    <lightning:card title="Shop Duties">
+        <p class="slds-p-horizontal_small">
+            <aura:iteration items="{!v.filteredItems}" var="item">
+                <c:shopDutiesListItem item="{!item}"/>
+            </aura:iteration>
+        </p>
+    </lightning:card>
+    <img class="bottomImage" src="https://raw.githubusercontent.com/Jeigor/SynergyFireworks/main/Project1/force-app/main/default/staticresources/Logo.png"/>
+</aura:component>

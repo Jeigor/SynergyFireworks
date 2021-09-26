@@ -1,0 +1,4 @@
+<aura:event type="COMPONENT" description="Update Duties List Item" >
+
+	<aura:attribute name="updateMessage" type="String"/>
+</aura:event>

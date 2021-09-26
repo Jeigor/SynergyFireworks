@@ -1,0 +1,62 @@
+<aura:component controller="TaskSaveCtrl" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+    <aura:attribute name="employeeRecords" type="List" default="[]"/>
+    <aura:attribute name="objTask" type="sObject" default="{ 'sobjectType': 'Task',
+                        'Description': '',
+                        'ActivityDate':'2021-09-19',
+                        'Priority': 'Normal',
+						'Status':'Not Started',
+                         'Subject': 'Shop Duty',
+                          'Type':'Shop Duty'}"/>
+    <aura:attribute name="objShop_Duty__c" type="Shop_Duty__c" default="{'sObjectType': 'Shop_Duty__c'}"/>
+  	<aura:attribute name="statusOptions" type="String[]" default="['Not Started','In Progress','Completed','Waiting on someone else','Deferred']"/>
+   <aura:attribute name="status" type="String" />
+    <aura:attribute name="missingEmployeeError" type="String" default=""
+  description="An error message"/>
+    <aura:attribute name="missingSubjectError" type="String" default=""
+  description="An error message"/>
+    
+     <aura:registerEvent name="closeModalEvent" type="c:closeDutiesAssignTaskModalEvent"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler name="oSelectedRecordEvent" event="c:selectedsObjectRecordEvent" action="{!c.handleComponentEvent}"/>
+    <div class="slds-m-around_large">
+         <form name="taskCreateForm" class="slds-form_stacked">
+         <c:customLookup objectAPIName="Employee__c" IconName="standard:account" label="Employees to Assign" missingError="{!v.missingEmployeeError}" employeeRecs="{!v.employeeRecords}" />
+          <aura:if isTrue="{!not(empty(v.missingEmployeeError))}">
+    		<div class="slds-text-color_error">
+        		<p><lightning:formattedText value="{!v.missingEmployeeError}" ></lightning:formattedText></p>
+   			</div>
+			</aura:if>
+      <lightning:input class="slds-input" value="{!v.objTask.Subject}" label="Subject" required="true" />
+             <aura:if isTrue="{!not(empty(v.missingSubjectError))}">
+    		<div class="slds-text-color_error">
+        		<p><lightning:formattedText value="{!v.missingSubjectError}" ></lightning:formattedText></p>
+   			</div>
+			</aura:if>
+        <ui:inputText class="slds-input" value="{!v.objTask.Description}" label="Comments"/>
+        <lightning:input type="date" label="Due Date" name="duedate" value="{!v.objTask.ActivityDate}" onchange="{!c.changeDate}"/>
+        <lightning:select aura:id="selectpriority" name="selectpriority" label="Select a Priority" value="{!v.objTask.Priority}" onchange="">
+    		<option value="" text="--None--"/>-->
+  			<option value="High" text="High"/>
+    		<option value="Normal" text="Normal"/>
+			<option value="Low" text="Low"/>
+  		</lightning:select>
+  <lightning:select aura:id="selectstatus" name="select" label="Select a Status" value="{!v.objTask.Status}" onchange="">
+      <!--<lightning:select label="Status" name="statusSelect" > -->
+ 	<aura:iteration items="{!v.statusOptions}" var="st">
+    
+  		<option value="{!st}" text="{!st}"/>-->
+    
+	</aura:iteration>
+  </lightning:select>
+     
+      
+<br/> 
+      
+  
+           
+             
+              </form>
+        
+          <button class="slds-utton slds-button_brand" onclick="{!c.saveTaskRecord}">Save Task</button> 
+  </div>       
+</aura:component>

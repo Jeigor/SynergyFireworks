@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_Interval_Before_Repeat__c</fullName>
+    <description>How much time before duty needs to be repeated?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How much time between tasks before it needs to repeat? (example, every 30 Min)</inlineHelpText>
+    <label>Time Interval Before Repeat</label>
+    <precision>10</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

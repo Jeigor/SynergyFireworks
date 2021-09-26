@@ -1,0 +1,12 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
+	<div>
+        <h1>
+        	Welcome to Ike's sandwich shop!
+        </h1>
+        <br/>
+        
+        <p>
+    	<img class="Image" src="https://raw.githubusercontent.com/Jeigor/SynergyFireworks/main/Project1/force-app/main/default/staticresources/Logo.png"/>
+    	</p>
+    </div>
+</aura:component>

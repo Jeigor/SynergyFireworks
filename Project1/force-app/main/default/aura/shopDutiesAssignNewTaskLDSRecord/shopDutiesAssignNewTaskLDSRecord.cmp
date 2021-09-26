@@ -1,0 +1,32 @@
+<aura:component controller="ShopDutiesAssignTaskApexController" implements="flexipage:availableForRecordHome,force:hasRecordId">
+<aura:attribute name="newTask" type="Object"/>
+
+<aura:attribute name="newTaskError" type="String"/>
+<!--
+    <force:recordData aura:id="contactRecordCreator"
+    fields="OwnerId, Comments, Name, Priority, Status, Type, RecurrenceRegeneratedType, IsRecurrence"
+    targetRecord="{!v.newContact}"
+    targetFields ="{!v.simpleNewContact}"
+    targetError="{!v.newContactError}"
+    />
+-->
+<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <!-- Display the new contact form -->
+    <lightning:card iconName="action:new_task" title="Create Task">
+        <div class="slds-p-horizontal--small">
+            <lightning:input aura:id="contactField" label="First Name" value="{!v.simpleNewContact.Name}"/>
+            <!--
+            <lightning:input aura:id="contactField" label="Last Name" value="{!v.simpleNewContact.LastName}"/>
+            <lightning:input aura:id="contactField" label="Title" value="{!v.simpleNewContact.Title}"/>
+			-->
+            <br/>
+            <lightning:button label="Save Task" variant="brand" onclick="{!c.handleSaveTask}"/>
+        </div>
+    </lightning:card>
+    <!-- Display Lightning Data Service errors -->
+    <aura:if isTrue="{!not(empty(v.newTaskError))}">
+        <div class="recordError">
+            {!v.newTaskError}
+        </div>
+    </aura:if>
+</aura:component>

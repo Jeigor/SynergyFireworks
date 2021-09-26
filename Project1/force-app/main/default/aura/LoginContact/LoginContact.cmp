@@ -1,0 +1,28 @@
+<aura:component Controller="LoginController" implements="forceCommunity:availableForAllPageTypes" access="global">
+    
+    <aura:attribute name="Username" type="String"/>
+    <aura:attribute name="Password" type="String"/>                
+    
+    
+    <div class="slds-form-element slds-align_absolute-center slds-m-top_x-large" style="margin-top:200px;">
+        <div class="slds-col slds-size_6-of-12" style="background-color:white;">
+            <form>
+                <div class="slds-align_absolute-center slds-m-top_small slds-text-heading_large">
+                    <span>LOGIN HERE</span>
+                </div>
+                
+                <div class="slds-form-element__control">
+                    <lightning:input label="Username" name="username" value="{!v.Username}" required="true" />
+                </div>
+                
+                <div class="slds-form-element__control">
+                    <lightning:input label="Password:" type="password" name="password"  value="{!v.Password}" required="true" />
+                </div>
+                
+                <div class="slds-align_absolute-center" style="height:4rem">
+                    <lightning:button variant="Brand" label="Login" onclick="{!c.userLogin}"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</aura:component>

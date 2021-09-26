@@ -155,9 +155,8 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Applicant</label>
     <nameField>
-        <displayFormat>A-{0000}</displayFormat>
         <label>Applicant Name</label>
-        <type>AutoNumber</type>
+        <type>Text</type>
     </nameField>
     <pluralLabel>Applicants</pluralLabel>
     <searchLayouts></searchLayouts>
