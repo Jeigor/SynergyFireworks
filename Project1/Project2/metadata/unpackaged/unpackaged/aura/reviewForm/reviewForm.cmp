@@ -1,0 +1,46 @@
+<aura:component controller="ReviewFormController">
+    <aura:attribute name="tran" type="Transaction__c" required="True"/> 
+    <aura:attribute name="review" type="Review__c" required="True"
+                    default="{ 'sobjectType': 'Review__c',                             
+                             'Subject__c': '', 
+                             'Review__c': ''}"/>    
+
+	<div aria-labelledby="reviewform">        	
+            <fieldset class="slds-box slds-theme_default slds-container_small">
+            	<legend id="reviewform" class="slds-text-heading_small
+                  slds-p-vertical_medium">
+                  Write a Review
+                </legend>
+                <form class="slds-form_stacked">
+                    <lightning:input aura:id="reviewform"
+                                     name="reviewer"
+                                     value="{!v.review.Name}"
+                                     label="Reviewer"/>
+                    <lightning:input aura:id="reviewform"
+                                     readonly="true"
+                                     name="transaction" 
+                                     value="{!v.tran.Name}"
+                                     label="Transaction"/>
+                    <lightning:select aura:id="rating" name="rating" label="Rate your review" required="true">
+                        <option value="">Select</option>
+                        <option value="One Star">One Star</option>
+                        <option value="Two Stars">Two Stars</option>
+                        <option value="Three Stars">Three Stars</option>
+                        <option value="Four Stars">Four Stars</option>
+                        <option value="Five Stars">Five Stars</option>
+    				</lightning:select>                    
+                    <lightning:input aura:id="reviewform"
+                                     name="subject" 
+                                     value="{!v.review.Subject__c}"
+                                     label="Subject"/>					
+                    <lightning:inputRichText aura:id="reviewform"                                              
+                                             value="{!v.review.Review__c}"
+                                             placeholder="Write review here."/>
+                    <lightning:button label="Submit Review"
+                                             class="slds-m-top_medium"
+                                             variant="brand"
+                                             onclick="{!c.addReview}"/>
+                </form>
+            </fieldset>            
+        </div>
+</aura:component>

@@ -1,0 +1,40 @@
+<aura:component controller="NewTransactionCartController" >        
+    <aura:attribute name="tran" type="Transaction__c" required="True"/>
+    <lightning:card title="{!v.tran.Name}" iconName="action:goal"
+                    class="{!v.tran.Review__c ?
+                           'slds-theme_success' : ''}">
+        
+        <p class="slds-p-horizontal_small">
+    		Name: {!v.tran.Name}
+    	</p>
+    	<p class="sldstext-heading_medium slds-p-horizontal_small">
+            Bread: {!v.tran.Bread_Type__c}
+    	</p>
+        <p class="sldstext-heading_medium slds-p-horizontal_small">
+            Meat: {!v.tran.Meat_Type__c}
+    	</p>
+        <p class="sldstext-heading_medium slds-p-horizontal_small">
+            Drink: {!v.tran.Drink__c} 
+    	</p>
+        <!-- p class="sldstext-heading_medium slds-p-horizontal_small">
+            Drink included: {!v.tran.Drink_Included__c}
+    	</p -->
+        <p class="sldstext-heading_medium slds-p-horizontal_small">
+            Utensils included: {!v.tran.Utensils_Included__c}
+    	</p>
+    	
+    	<p>
+    		<lightning:input type="toggle"
+            	             label="Add Review"
+                	         name="review"
+                             class="slds-p-around_small"
+                    	     checked="{!v.tran.Review__c}"
+                             messageToggleActive="Yes"
+                             messageToggleInactive="No"/>
+    	</p>
+        
+    </lightning:card>
+    <aura:renderif isTrue="{!v.tran.Review__c}">
+        <c:reviewForm tran="{!v.tran}"/>    
+    </aura:renderif>
+</aura:component>
